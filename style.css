@@ -92,6 +92,11 @@ h6 {
   padding: 1rem;
 }
 
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 32px;
+}
+
 p {
   padding: 1rem;
 }
@@ -164,11 +169,11 @@ nav {
 .hero-title {
   flex: 1;
   text-align: center;
+  padding: 1em;
 }
 
 .hero-title h1 {
-  font-family: var(--title-font);
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .hero-image {
@@ -246,6 +251,11 @@ nav {
   padding: 1rem;
   background-color: white;
   border: 1px solid var(--text-color);
+}
+
+.card h1 {
+  font-family: var(--body-text);
+  font-size: 25px;
 }
 
 /* Feature Section */
