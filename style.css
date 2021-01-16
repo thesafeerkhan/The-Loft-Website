@@ -41,8 +41,8 @@ img {
 .btn {
   display: inline-block;
   position: relative;
-  bottom: 5px;
-  right: 5px;
+  bottom: 4px;
+  right: 4px;
 
   padding: 1rem;
   text-transform: uppercase;
@@ -365,6 +365,170 @@ nav {
   transform: translate3d(40%, 0, -200px);
 }
 
+.gallery-cta {
+  text-align: center;
+  margin: 2em 1em;
+}
+
+.gallery-cta h2 {
+  color: var(--bright-color);
+}
+
+/* Location Section */
+.location-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.location-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.transport-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--bright-color);
+  padding-left: 1em;
+}
+
+.google-map {
+  margin-top: 3em;
+}
+
+iframe {
+  position: relative;
+  bottom: 4px;
+  right: 9px;
+}
+
+/* Subscribe Section */
+#subscribe {
+  background-color: var(--hightlight-color);
+}
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.subscribe-section p {
+  width: 90%;
+}
+
+.form-section input {
+  padding: 1rem;
+  margin: 1rem;
+  width: 100%;
+  font-size: 1em;
+}
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form-section > * {
+  flex: 1;
+}
+
+.form-section > *:last-child {
+  flex: 2;
+}
+
+.subscribe-section .btn-container {
+  background-color: var(--text-color);
+}
+
+.subscribe-section .btn {
+  padding: 1em 4em;
+}
+
+/* CTA Section */
+#cta {
+  background-color: var(--text-color);
+  color: white;
+}
+
+#cta h2 {
+  color: var(--bright-color);
+}
+
+#cta a {
+  color: white;
+}
+
+.cta-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-top {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cta-top > * {
+  width: 300px;
+}
+
+.cta-top a {
+  padding-left: 1em;
+}
+
+.cta-text {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+}
+
+.cta-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 2em;
+  padding: 2em;
+  width: 100%;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.555);
+}
+
+.spacemade-logo {
+  height: auto;
+  width: 100%;
+}
+
+.cta-bottom a {
+  padding-left: 1em;
+}
+
+.cta-bottom-text {
+  width: 50%;
+}
+
+/* Footer */
+footer {
+  background-color: #061b1b;
+  color: white;
+  text-align: center;
+  padding: 2em;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  font-size: small;
+  color: rgba(255, 255, 255, 0.329);
+}
+
 /* Mobile */
 @media only screen and (max-width: 750px) {
   .wrapper {
@@ -401,5 +565,31 @@ nav {
   .hero-image {
     width: 100%;
     height: 30%;
+  }
+
+  .location-text {
+    flex-direction: column;
+  }
+
+  .form-section {
+    flex-direction: column;
+  }
+
+  .cta-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-top > * {
+    width: 100%;
+  }
+
+  .cta-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-bottom-text {
+    width: 100%;
   }
 }
